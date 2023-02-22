@@ -1,0 +1,57 @@
+package com.JavaBasico.poo.ejercicio;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        SmartDevice aparatoApple = new SmartDevice("Apple", "Negro", "32GB", 6.1,true);
+
+        SmartDevice.Smartphone iPhone = new SmartDevice.Smartphone();
+        iPhone.fabricante = "Apple";
+        iPhone.color = "Negro";
+        iPhone.memoria = "128GB";
+        iPhone.pulgadasPantalla = 6.1;
+        iPhone.wifi = true;
+        iPhone.modeloSmartphone = "iPhone 14 Pro";
+        iPhone.tipoCamara = "Camara Pro";
+        iPhone.mpxCamara = 48;
+        iPhone.camaraDelantera = true;
+        iPhone.cincoG = true;
+
+        System.out.println(iPhone.fabricante);
+        System.out.println(iPhone.color);
+        System.out.println(iPhone.memoria);
+        System.out.println(iPhone.pulgadasPantalla);
+        System.out.println(iPhone.wifi);
+        System.out.println(iPhone.modeloSmartphone);
+        System.out.println(iPhone.tipoCamara);
+        System.out.println(iPhone.mpxCamara);
+        System.out.println(iPhone.camaraDelantera);
+        System.out.println(iPhone.cincoG);
+
+        SmartDevice.Smartwatch watch = new SmartDevice.Smartwatch();
+        watch.fabricante = "Apple";
+        watch.color = "Gris";
+        watch.memoria = "32GB";
+        watch.pulgadasPantalla = 1.73;
+        watch.wifi = true;
+        watch.modeloSmartwatch = "Watch SE";
+        watch.resistenciaAgua = "10 metros";
+        watch.colorCorrea = "Rojo";
+        watch.appOxigeno = true;
+        watch.frecuenciaCardiaca = true;
+
+        System.out.println(watch.fabricante);
+        System.out.println(watch.color);
+        System.out.println(watch.memoria);
+        System.out.println(watch.pulgadasPantalla);
+        System.out.println(watch.wifi);
+        System.out.println(watch.modeloSmartwatch);
+        System.out.println(watch.resistenciaAgua);
+        System.out.println(watch.colorCorrea);
+        System.out.println(watch.appOxigeno);
+        System.out.println(watch.frecuenciaCardiaca);
+
+    }
+
+}
