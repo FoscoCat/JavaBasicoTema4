@@ -1,0 +1,64 @@
+package com.JavaBasico.poo.ejercicio;
+
+public class SmartDevice {
+
+    protected String fabricante;
+    protected String color;
+    protected String memoria;
+    protected double pulgadasPantalla;
+    protected boolean wifi;
+
+    public SmartDevice() {
+    }
+
+    public SmartDevice(String fabricante, String color, String Memoria, double pulgadasPantalla, boolean wifi) {
+        this.fabricante = fabricante;
+        this.color = color;
+        this.memoria = Memoria;
+        this.pulgadasPantalla = pulgadasPantalla;
+        this.wifi = wifi;
+    }
+
+    public static class Smartphone extends SmartDevice {
+
+        public String modeloSmartphone;
+        public String tipoCamara;
+        public int mpxCamara;
+        boolean camaraDelantera;
+        boolean cincoG;
+
+        public Smartphone() {
+        }
+
+        public Smartphone(String fabricante, String color, String Memoria, double pulgadasPantalla, boolean wifi, String modeloSmartphone, String tipoCamara, int mpxCamara, boolean camaraDelantera, boolean cincoG) {
+            super(fabricante, color, Memoria, pulgadasPantalla, wifi);
+            this.modeloSmartphone = modeloSmartphone;
+            this.tipoCamara = tipoCamara;
+            this.mpxCamara = mpxCamara;
+            this.camaraDelantera = camaraDelantera;
+            this.cincoG = cincoG;
+        }
+    }
+
+    public static class Smartwatch extends SmartDevice {
+
+        String modeloSmartwatch;
+        String resistenciaAgua;
+        String colorCorrea;
+        boolean appOxigeno;
+        boolean frecuenciaCardiaca;
+
+        public Smartwatch() {
+        }
+
+        public Smartwatch(String fabricante, String color, String Memoria, double pulgadasPantalla, boolean wifi, String modeloSmartwatch, String resistenciaAgua, String colorCorrea, boolean appOxigeno, boolean frecuenciaCardiaca) {
+            super(fabricante, color, Memoria, pulgadasPantalla, wifi);
+            this.modeloSmartwatch = modeloSmartwatch;
+            this.resistenciaAgua = resistenciaAgua;
+            this.colorCorrea = colorCorrea;
+            this.appOxigeno = appOxigeno;
+            this.frecuenciaCardiaca = frecuenciaCardiaca;
+        }
+    }
+
+    }
